@@ -1,2 +1,1 @@
-# Core
-A BungeeCord Plugin
+![logo](https://i.imgur.com/jpFR974.png)
