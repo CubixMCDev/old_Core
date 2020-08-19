@@ -48,14 +48,12 @@ repositories {
 }
 
 dependencies {
-    compile (name: 'spigot', ext: 'jar')
-    compile (name: 'cubixapi', ext: 'jar')
+    compile (name: 'bungeecord', ext: 'jar')
 }
 
 shadowJar {
     dependencies {
-        exclude(dependency(name: 'spigot', ext:'jar'))
-        exclude(dependency(name: 'cubixapi', ext:'jar'))
+        exclude(dependency(name: 'bungeecord', ext:'jar'))
     }
 }
 
