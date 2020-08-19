@@ -1,0 +1,8 @@
+name: CubixCore
+version: 1.0.0
+main: eu.cubix.mc.core.Main
+author: PipoSurYouTube
+description: Plugin principal du Proxy
+commands:
+  lobby:
+    aliases: [hub, leave, quit]
