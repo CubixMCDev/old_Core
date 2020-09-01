@@ -9,16 +9,22 @@ import net.md_5.bungee.event.EventHandler;
 
 public class PlayerEvent implements Listener {
 
+    private final Main main;
+
+    public PlayerEvent(Main main) {
+        this.main = main;
+    }
+
     @EventHandler
     public void onJoin(PostLoginEvent e) {
         ProxiedPlayer player = e.getPlayer();
-        Main.getInstance().getLogger().info(e.getPlayer()+" a rejoint le serveur.");
+        main.getLogger().info(e.getPlayer()+" a rejoint le serveur.");
     }
 
     @EventHandler
     public void onQuit(PlayerDisconnectEvent e) {
         ProxiedPlayer player = e.getPlayer();
-        Main.getInstance().getLogger().info(e.getPlayer()+" a quitté le serveur.");
+        main.getLogger().info(e.getPlayer()+" a quittÃ© le serveur.");
     }
 
 }
