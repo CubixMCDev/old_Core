@@ -16,11 +16,11 @@ public class Hub extends Command {
         if (sender instanceof ProxiedPlayer) {
             final ProxiedPlayer p = (ProxiedPlayer)sender;
             final ServerInfo s = p.getServer().getInfo();
-            p.sendMessage("§eCubixMC §6» §eConnexion au serveur en cours... §6(§eHub§6)");
+            p.sendMessage("§eCubixMC §6» §eConnexion au serveur en cours... §6(§eHub1§6)");
             if (s.getName().equalsIgnoreCase("Auth")) {
                 p.sendMessage("§cCubixMC §4» §cErreur: Veuillez vous connecter ou vous enregistrer.");
             } else {
-                p.connect(ProxyServer.getInstance().getServerInfo("Hub01"));
+                p.connect(ProxyServer.getInstance().getServerInfo("hub1"));
             }
         }
     }
