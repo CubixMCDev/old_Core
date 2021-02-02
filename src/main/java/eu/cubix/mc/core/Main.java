@@ -1,7 +1,6 @@
 package eu.cubix.mc.core;
 
 import eu.cubix.mc.core.commands.Hub;
-import eu.cubix.mc.core.events.Mention;
 import eu.cubix.mc.core.events.PlayerEvent;
 import net.md_5.bungee.api.plugin.Plugin;
 
@@ -17,7 +16,6 @@ public class Main extends Plugin {
         getProxy().getPluginManager().registerListener(this, new PlayerEvent(this));
 
         getProxy().getPluginManager().registerCommand(this, new Hub());
-        getProxy().getPluginManager().registerListener(this, new Mention());
     }
 
     @Override
